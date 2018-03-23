@@ -1,4 +1,4 @@
-package grapple;
+package net.undergroundantics.grapple;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

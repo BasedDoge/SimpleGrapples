@@ -1,4 +1,4 @@
-package grapple;
+package net.undergroundantics.grapple;
 
 import static java.lang.Math.sqrt;
 import org.bukkit.ChatColor;

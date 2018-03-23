@@ -9,7 +9,7 @@ import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class GrappleMain extends JavaPlugin{
+public class SimpleGrapples extends JavaPlugin{
 
     @Override
     public void onEnable()

@@ -40,7 +40,7 @@ public class Grapple implements Listener {
                 double d2 = HookZ - player.getLocation().getZ();
                 double d3 = (double) sqrt(d0 * d0 + d1 * d1 + d2 * d2);
                 Vector v = new Vector(d0 * 0.1D, d1 * 0.1D + (double) sqrt(d3) * 0.08D, d2 * 0.1D);
-                player.setVelocity(v);
+                player.setVelocity(v.multiply(1.5));
             }
         } //stops the player from using a grapple as a fishing rod
         else if (bobberState == CAUGHT_FISH && grappleCheck(player.getInventory().getItemInMainHand())) {

@@ -44,15 +44,6 @@ public class Grapple implements Listener {
                 double d3 = (double) sqrt(d0 * d0 + d1 * d1 + d2 * d2);
                 Vector v = new Vector(d0 * 0.1D, d1 * 0.1D + (double) sqrt(d3) * 0.08D, d2 * 0.1D);
                 player.setVelocity(v);
-            } //converts old grapples to the new grapple system
-            //(Using Item flag rather than lore)
-            else if (player.getInventory().getItemInMainHand().getItemMeta().getLore().contains(ChatColor.GOLD + "Grappling Hook")) {
-                player.sendMessage("Grapple Updated");
-                ItemStack grapple = player.getInventory().getItemInMainHand();
-                ItemMeta meta = grapple.getItemMeta();
-                meta.addItemFlags(HIDE_POTION_EFFECTS);
-                meta.setLore(null);
-                grapple.setItemMeta(meta);
             }
         } //stops the player from using a grapple as a fishing rod
         else if (bobberState == CAUGHT_FISH && grappleCheck(player.getInventory().getItemInMainHand())) {

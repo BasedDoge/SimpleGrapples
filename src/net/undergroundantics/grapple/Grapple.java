@@ -1,7 +1,6 @@
 package net.undergroundantics.grapple;
 
 import static java.lang.Math.sqrt;
-import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.Sound;
@@ -14,9 +13,7 @@ import org.bukkit.event.player.PlayerFishEvent;
 import static org.bukkit.event.player.PlayerFishEvent.State.CAUGHT_FISH;
 import static org.bukkit.event.player.PlayerFishEvent.State.IN_GROUND;
 import org.bukkit.inventory.ItemFlag;
-import static org.bukkit.inventory.ItemFlag.HIDE_POTION_EFFECTS;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.util.Vector;
 
 public class Grapple implements Listener {
